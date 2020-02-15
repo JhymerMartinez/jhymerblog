@@ -1,0 +1,18 @@
+{
+  "name": "jhymerblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/ghost start",
+    "stop": "node_modules/.bin/ghost stop",
+    "install:current": "cd current && npm install && cd ..",
+    "install:versions3": "cd versions/3.6.0 && npm install && cd ../..",
+    "install:deps": "npm run install:current && npm run install:versions3 && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ghost-cli": "^1.13.1"
+  }
+}
